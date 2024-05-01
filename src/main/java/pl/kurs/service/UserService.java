@@ -1,11 +1,11 @@
-package service;
+package pl.kurs.service;
 
-import exceptions.UserNotFoundException;
+import pl.kurs.model.User;
+import pl.kurs.exceptions.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import model.User;
 import org.springframework.stereotype.Service;
-import repository.UserRepository;
+import pl.kurs.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor

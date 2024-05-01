@@ -1,7 +1,7 @@
-package dto;
+package pl.kurs.dto;
 
-import model.Transaction;
-import model.TransactionType;
+import pl.kurs.model.Transaction;
+import pl.kurs.model.TransactionType;
 
 import java.time.LocalDate;
 

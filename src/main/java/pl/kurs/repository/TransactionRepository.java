@@ -1,7 +1,7 @@
-package repository;
+package pl.kurs.repository;
 
-import model.Transaction;
-import model.User;
+import pl.kurs.model.Transaction;
+import pl.kurs.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

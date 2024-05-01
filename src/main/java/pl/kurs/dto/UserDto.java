@@ -1,7 +1,7 @@
-package dto;
+package pl.kurs.dto;
 
-import model.Transaction;
-import model.User;
+import pl.kurs.model.Transaction;
+import pl.kurs.model.User;
 
 import java.util.Set;
 

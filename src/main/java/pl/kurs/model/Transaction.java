@@ -1,4 +1,4 @@
-package model;
+package pl.kurs.model;
 
 import jakarta.persistence.*;
 import lombok.*;

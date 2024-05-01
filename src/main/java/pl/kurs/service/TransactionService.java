@@ -1,16 +1,16 @@
-package service;
+package pl.kurs.service;
 
-import exceptions.InsufficientFundsException;
-import exceptions.UserNotFoundException;
+import pl.kurs.model.Transaction;
+import pl.kurs.model.TransactionCriteria;
+import pl.kurs.model.User;
+import pl.kurs.exceptions.InsufficientFundsException;
+import pl.kurs.exceptions.UserNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import model.Transaction;
-import model.TransactionCriteria;
-import model.User;
 import org.springframework.stereotype.Service;
-import repository.TransactionRepository;
-import repository.UserRepository;
+import pl.kurs.repository.TransactionRepository;
+import pl.kurs.repository.UserRepository;
 
 import java.util.List;
 

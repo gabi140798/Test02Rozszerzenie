@@ -1,14 +1,14 @@
-package controller;
+package pl.kurs.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import model.Transaction;
-import model.TransactionCriteria;
-import model.User;
+import pl.kurs.model.Transaction;
+import pl.kurs.model.TransactionCriteria;
+import pl.kurs.model.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import service.TransactionService;
-import service.UserService;
+import pl.kurs.service.TransactionService;
+import pl.kurs.service.UserService;
 
 import java.util.List;
 
