@@ -32,4 +32,11 @@ public class User {
         this.surname = surname;
         this.balance = balance;
     }
+
+    public User(Long id, String name, String surname, double balance) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.balance = balance;
+    }
 }
