@@ -13,6 +13,8 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
     @Query("SELECT t.user.id, COUNT(t) FROM Transaction t GROUP BY t.user.id")
     List<Object[]> countTransactionsByUser();
 
-    List<Transaction> findByAmountBetweenAndDateBetweenAndUser(Double minAmount, Double maxAmount, LocalDate startDate, LocalDate endDate, User user);
+    List<Transaction> findByAmountBetweenAndTransactionDateBetweenAndUser(
+            Double minAmount, Double maxAmount, LocalDate startDate, LocalDate endDate, User user);
+
 }
 

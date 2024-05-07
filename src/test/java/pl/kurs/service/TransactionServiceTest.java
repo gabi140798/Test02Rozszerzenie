@@ -75,7 +75,7 @@ class TransactionServiceTest {
 
          TransactionCriteria criteria = new TransactionCriteria(200.0, 400.0, LocalDate.now(), LocalDate.now(), user.getId());
 
-        when(transactionRepository.findByAmountBetweenAndDateBetweenAndUser(criteria.getMinAmount(), criteria.getMaxAmount(), criteria.getStart(), criteria.getFinish(), user))
+        when(transactionRepository.findByAmountBetweenAndTransactionDateBetweenAndUser(criteria.getMinAmount(), criteria.getMaxAmount(), criteria.getStart(), criteria.getFinish(), user))
                 .thenReturn(expectedTransactions);
 
         List<Transaction> result = transactionService.findTransactions(criteria, user);

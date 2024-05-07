@@ -45,7 +45,7 @@ public class TransactionService {
 
 
     public List<Transaction> findTransactions(TransactionCriteria criteria, User user) {
-        return transactionRepository.findByAmountBetweenAndDateBetweenAndUser(
+        return transactionRepository.findByAmountBetweenAndTransactionDateBetweenAndUser(
                 criteria.getMinAmount(),
                 criteria.getMaxAmount(),
                 criteria.getStart(),

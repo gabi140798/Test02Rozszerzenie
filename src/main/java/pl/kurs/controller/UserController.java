@@ -14,7 +14,7 @@ import pl.kurs.service.UserService;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api /v1/users")
+@RequestMapping("/api/v1/users")
 @Slf4j
 @RequiredArgsConstructor
 public class UserController {
